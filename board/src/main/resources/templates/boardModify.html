@@ -28,6 +28,7 @@
 </style>
 <body>
 <div class="layout">
+  <h1>게시글 수정</h1>
   <form th:action="@{/board/update/{id}(id=${board.id})}" method="post">
     <input name="title" type="text" th:value="${board.title}">
     <textarea name="content" th:text="${board.content}"></textarea>
